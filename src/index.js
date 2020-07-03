@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import App from './App.js';
 import login from './reducers/login';
-import registratedUsers from './reducers/registratedUsers';
+import authorizedUsers from './reducers/registratedUsers';
 
 /**
  * combineReducers- функция которая обьеденяет в себе множество редьюсеров
@@ -16,9 +16,9 @@ import registratedUsers from './reducers/registratedUsers';
  * (ес6 возможность обьявить key и value  с одним именем не обьявляя key )
  * @returns {function} для передачи в createStore
  */
-export const combindeReducer = combineReducers({
+export const combinedReducer = combineReducers({
   login,
-  registratedUsers,
+  authorizedUsers,
 });
 
 /**
@@ -28,7 +28,7 @@ export const combindeReducer = combineReducers({
  * @param {string} - расширения для работы с расширением 'REDUX_DEVTOOLS" (технология "redux")
  * @returns {store} - обьект, который помещается в Provider компонент как props с именем store (технология "react-redux")
  */
-const store = createStore(combindeReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(combinedReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 /**
  * место, где происходит "рендер" компонента app обернутого в компонент Provider

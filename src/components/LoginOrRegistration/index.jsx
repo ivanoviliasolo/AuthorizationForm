@@ -77,7 +77,7 @@ function LoginOrRegistration({
   function onBlurFunction(oneField, validation) {
     if (validation === 'password') {
       if (oneField.value.match(regExpPassword) === null) {
-        setHasError({ id: oneField.id, text: ' Поле пароля должно содержать как минимум 1 большую букву или цыфру ' });
+        setHasError({ id: oneField.id, text: ' Поле пароля должно содержать как минимум 1 большую букву или цифру ' });
         return;
       }
       setHasError({});

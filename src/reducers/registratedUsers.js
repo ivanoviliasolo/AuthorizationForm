@@ -7,7 +7,7 @@ import { ADD, REMOVE } from '../constants/actions';
  * @param {object} обьект с полями type, payload, type обязательно
  * @returns {state} новое значение состояния
  */
-export default function registratedUsers(initialState = [], { type, payload }) {
+export default function authorizedUsers(initialState = [], { type, payload }) {
   switch (type) {
     case ADD: {
       return [...initialState, {
