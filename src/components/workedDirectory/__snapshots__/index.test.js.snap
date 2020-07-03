@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестируем компонент WorkedDirectory  Тестирование с помощью снимков на изменения в структуре компонента 1`] = `
+<div
+  className="wrapp-main"
+>
+  Добрый день -
+  Admin
+  <button
+    className="unlogin-button"
+    onClick={[Function]}
+  >
+    Выйти из учетной записи
+     
+    Admin
+  </button>
+</div>
+`;

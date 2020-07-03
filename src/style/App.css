@@ -1,0 +1,102 @@
+.main-dialog-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-dialog-window {
+  text-align: center;
+  position: relative;
+  top: 30vh;
+  left: 30vw;
+  height: 40vh;
+  width: 40vw;
+  background-color: burlywood;
+}
+
+.dialog-header {
+  background-color: sandybrown;
+  padding: 10px;
+}
+
+.header-close-button {
+  float: right;
+}
+
+.header-close-button:hover {
+  cursor: pointer;
+  background-color: cadetblue;
+}
+
+.title-of-input {
+  padding: 5px;
+  text-align: end;
+}
+
+.wrapper-div-of-input {
+  padding: 5px 0.5vw;
+  width: 39vw;
+}
+
+.field-with-data-of-input {
+  width: 50%;
+  text-align: center;
+  float: right;
+  margin-right: 20px;
+}
+
+.wrapper-near-the-all-fields {
+  height: 32vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.main-dialog-footer {
+  text-align: end;
+  padding: 5px;
+  background: sandybrown;
+}
+
+.main-dialog-footer-indent {
+  margin-right: 10px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.users-error-footer {
+  float: left;
+}
+
+.wait-request {
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  padding: 2vw;
+  background-color: #2c6370;
+  border-radius: 1vw;
+}
+
+.wrapp-main {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding: 20vw;
+}
+
+.unlogin-button {
+  margin-left: 1vw;
+}
+
+div {
+  color: black;
+  background-color: rgba(172, 179, 184, 0.5);
+}
+
+/*# sourceMappingURL=App.css.map */

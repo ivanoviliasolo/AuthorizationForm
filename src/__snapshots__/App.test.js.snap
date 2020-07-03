@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестируем компонент App  Тестирование с помощью снимка, на целостность структуры компонента: ожидается совпадение снимку 1`] = `
+<div>
+  <div
+    className="main-dialog-background"
+  >
+    <div
+      className="main-dialog-window"
+    >
+      <div
+        className="dialog-header"
+      >
+        Окно авторизации
+         
+      </div>
+      <div
+        className="wrapper-near-the-all-fields"
+      />
+      <div
+        className="main-dialog-footer"
+      >
+        <span
+          className="users-error-footer"
+        >
+          
+        </span>
+        <button
+          className="main-dialog-footer-indent"
+          disabled={-1}
+          onClick={[Function]}
+        >
+          Войти
+        </button>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          Выйти
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
