@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import App from './App.js';
 import login from './reducers/login';
-import authorizedUsers from './reducers/registratedUsers';
+import authorizedUsers from './reducers/authorizedUsers';
 
 /**
  * combineReducers- функция которая обьеденяет в себе множество редьюсеров

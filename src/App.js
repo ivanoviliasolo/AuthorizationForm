@@ -61,6 +61,7 @@ export function App({
  * или выводит ошибку путем изменения состояния(фэйк задержка 1 сек).
  */
   function handleGetDataFromForm(data) {
+    console.log('data',data)
     for (const state of defLoginsState) {
       let logginLegal = false;
       for (const one of data) {
@@ -99,7 +100,8 @@ export function App({
 
   return (
     <div>
-      {registratedUsers.length > 0
+      {Array.isArray(registratedUsers)?
+      registratedUsers.length > 0
         ? <WorkedDirectory />
         : (
           <LoginOrRegistration
@@ -111,11 +113,11 @@ export function App({
             { title: 'password', validation: 'password' },
           ]
         }
-            onSave={(e) => handleGetDataFromForm(e)}
+            onSave={handleGetDataFromForm}
             error={error}
             waitRequest={waitRequest}
           />
-        )}
+        ):null}
 
     </div>
   );
@@ -129,7 +131,7 @@ export function App({
 export default connect(
   (state) => ({
     defLoginsState: state.login,
-    registratedUsers: state.registratedUsers,
+    registratedUsers: state.authorizedUsers,
 
   }),
   (dispatch) => ({

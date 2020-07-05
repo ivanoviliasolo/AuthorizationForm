@@ -19,6 +19,7 @@
 .dialog-header {
   background-color: sandybrown;
   padding: 10px;
+  height: 2vh;
 }
 
 .header-close-button {
@@ -48,15 +49,17 @@
 }
 
 .wrapper-near-the-all-fields {
-  height: 32vh;
+  height: 35vh;
   overflow-y: auto;
   overflow-x: hidden;
+  background: blueviolet;
 }
 
 .main-dialog-footer {
   text-align: end;
   padding: 5px;
   background: sandybrown;
+  height: 3vh;
 }
 
 .main-dialog-footer-indent {

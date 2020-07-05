@@ -34,7 +34,7 @@ export function WorkedDirectory({
 
 export default connect(
   (state) => ({
-    registratedUsers: state.registratedUsers,
+    registratedUsers: state.authorizedUsers,
   }),
   (dispatch) => ({
     dispatchAction: (arg) => dispatch(arg),
