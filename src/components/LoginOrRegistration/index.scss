@@ -14,6 +14,7 @@
     height: 40vh;
     width: 40vw;
     background-color: burlywood;
+    min-width: 400px;
 }
 
 .dialog-header{
@@ -67,7 +68,6 @@ width: 39vw;
 }
 
 .error-message{
-    color: red;
 text-align: center;
 margin-top: 2vh;
 }
